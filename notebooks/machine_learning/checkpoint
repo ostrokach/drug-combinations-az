@@ -1,0 +1,2 @@
+model_checkpoint_path: "machine_learning/tensorflow_ch1-6000"
+all_model_checkpoint_paths: "machine_learning/tensorflow_ch1-6000"
