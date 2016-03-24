@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 17 14:27:49 2015
-
-@author: strokach
-"""
-
 import os
 import os.path as op
 
@@ -58,7 +51,7 @@ if False:
     store.close()
 else:
     store = pd.HDFStore('challenge_data/challenge_data.h5')
-    
+
 
 
 

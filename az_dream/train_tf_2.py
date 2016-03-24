@@ -384,7 +384,10 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    DATA_PATH = '/home/kimlab1/strokach/biodata/recipes/az_dream_2015/notebooks/machine_learning'
+    DATA_PATH = op.join(
+        os.environ['HOME'],
+        'biodb/recipes/az_dream_2015/notebooks/machine_learning'
+    )
     if args.FEATURE_FORMAT == 'imputed':
         input_df = pd.read_hdf(
             op.join(DATA_PATH, 'ddc_data_{}_imputed_sqrt_allqa.h5'.format(args.subchallenge)))

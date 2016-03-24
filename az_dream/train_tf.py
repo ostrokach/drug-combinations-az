@@ -1,4 +1,5 @@
 import sys
+import os
 import os.path as op
 import time
 from importlib import reload
@@ -286,7 +287,10 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    DATA_PATH = '/home/kimlab1/strokach/biodata/recipes/az_dream_2015/notebooks/machine_learning'
+    DATA_PATH = op.join(
+        os.environ['HOME'],
+        'biodb/recipes/az_dream_2015/notebooks/machine_learning'
+    )
     if args.FEATURE_FORMAT == 'imputed':
         input_df = pd.read_hdf(
             op.join(DATA_PATH, 'ddc_data_{}_imputed_sqrt_allqa.h5'.format(args.subchallenge)))
@@ -372,7 +376,7 @@ if __name__ == '__main__':
         try:
             df.to_sql(
                 'tf_optimization_3',
-                sa.create_engine('mysql://strokach:@192.168.6.19:3306/az_dream_2015_ml'),
+                sa.create_engine(os.environ['BIODB_CONNECTION_STR'] + '/az_dream_2015_ml'),
                 if_exists='append',
                 index=False
             )

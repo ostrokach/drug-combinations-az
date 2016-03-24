@@ -1,4 +1,5 @@
 import sys
+import os
 import time
 import pickle
 
@@ -129,7 +130,7 @@ if __name__ == '__main__':
         try:
             df.to_sql(
                 'iterative_feature_addition_2',
-                sa.create_engine('mysql://strokach:@192.168.6.19:3306/az_dream_2015_ml'),
+                sa.create_engine(os.environ['BIODB_CONNECTION_STR'] + '/az_dream_2015_ml'),
                 if_exists='append',
                 index=False
             )
