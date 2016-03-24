@@ -1,0 +1,17 @@
+# Hidden
+.*
+_*
+
+# Folders
+backup/*
+challenge_data/*
+challenge_resources/*
+
+# Other
+*.html  # should be used for preview purposes only
+*.bak
+
+# Submissions are crappy anyway
+scripts
+submissions
+

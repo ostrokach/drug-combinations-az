@@ -1,0 +1,16 @@
+CLF_TYPE = 'regressor'
+N_ROWS = None
+N_COLUMNS = None
+
+LAYER_1_SIZE = 32
+WEIGHT_STDDEV = 0.1
+LAMBDA = 1e-4
+
+LEARNING_RATE = 0.5
+LEARNING_RATE_DECAY = 0.99
+
+DROPOUT = 0.5
+RANDOM_SEED = 42
+WITH_TENSORBOARD = False
+
+tf_valid_dataset = None
