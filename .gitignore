@@ -10,6 +10,7 @@ challenge_resources/*
 # Other
 *.html  # should be used for preview purposes only
 *.bak
+*.egg-info
 
 # Submissions are crappy anyway
 scripts
