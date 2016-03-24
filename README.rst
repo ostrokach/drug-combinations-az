@@ -1,5 +1,5 @@
-AstraZeneca Dream Challenge 2015
-================================
+AstraZeneca Dream Challenge
+===========================
 
-Code for the `AstraZeneca Dream Challenge 2015 <https://www.synapse.org/#!Synapse:syn4231880/wiki/>`_.
+Code for the `AstraZeneca Dream Challenge 2015 <https://www.synapse.org/#!Synapse:syn4231880>`_.
 
