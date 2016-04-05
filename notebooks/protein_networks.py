@@ -212,11 +212,11 @@ if __name__ == '__main__':
         save_data(vertex_df, edge_df, all_edge_df, 'ppi_' + prefix, args.cell_line)
     del ppi_df, vertex_df, edge_df, all_edge_df
 
-#    string_df = get_string_data()
-#    for prefix, bad_genes in gene_sets:
-#        vertex_df, edge_df, all_edge_df = gene_network_properties(
-#            string_df, bad_genes, good_genes, args.cell_line)
-#        save_data(vertex_df, edge_df, all_edge_df, 'string_' + prefix, args.cell_line)
-#    del string_df, vertex_df, edge_df, all_edge_df
-
+    # string_df = get_string_data()
+    # for prefix, bad_genes in gene_sets:
+    #    vertex_df, edge_df, all_edge_df = gene_network_properties(
+    #        string_df, bad_genes, good_genes, args.cell_line)
+    #    save_data(vertex_df, edge_df, all_edge_df, 'string_' + prefix, args.cell_line)
+    # del string_df, vertex_df, edge_df, all_edge_df
+    #
     print("Done!")

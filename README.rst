@@ -1,5 +1,8 @@
-Astra-Zeneca Dream Challenge 2015
-=================================
+Astra-Zeneca Dream Challenge
+============================
+
+Code and pipelines for the `AztraZeneca Dream Challenge (2015) <https://www.synapse.org/#!Synapse:syn4231880>`_.
+
 
 Data summary
 ------------
